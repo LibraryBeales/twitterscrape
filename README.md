@@ -7,8 +7,8 @@ twitterscrapetocsv.py creates a csv containing Username, Handle, Permalink, Time
 This project uses saved html documents instead of live twitter pages because researchers will be referencing saved html pages as they frequently require a static version to include/reference in their publications. 
 
 Coming improvements include:
-* * Encoding in utf-8 so that encode/decode errors are not encountered when using the OS default encoding. 
-* * VBA script to interpret and display html in Excel or Calc. 
-* * Options to adjust time stamp to location other than that of the twitter search.
-* * Selenium browser used to search twitter and save html files, so this does not have to be done manually outside of the command line. 
-* * Tutorials - For instructions on how to use these scripts, visit "Under Construction."
+* Encoding in utf-8 so that encode/decode errors are not encountered when using the OS default encoding. 
+* VBA script to interpret and display html in Excel or Calc. 
+* Options to adjust time stamp to location other than that of the twitter search.
+* Selenium browser used to search twitter and save html files, so this does not have to be done manually outside of the command line. 
+* Tutorials - For instructions on how to use these scripts, visit "Under Construction."
