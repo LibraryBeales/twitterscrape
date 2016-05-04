@@ -8,4 +8,8 @@ This project uses saved html documents instead of live twitter pages because res
 
 Coming improvements include:
 * Encoding in utf-8 in order to avoid charmap errors on encode and decode when using the OS default encoding.
-* VBA script to interpret and display html in Excel or Calc
+
+
+
+
+VBA script to interpret and display html in Excel or Calc
