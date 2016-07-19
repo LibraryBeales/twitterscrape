@@ -49,7 +49,7 @@ rownew = list(rows)
 
 print (rownew)
 
-newfile = input("Enter a filename for the hastag counts:") + ".csv"
+newfile = input("Enter a filename for the table:") + ".csv"
 
 with open(newfile, 'w') as f:
 	writer = csv.writer(f)
