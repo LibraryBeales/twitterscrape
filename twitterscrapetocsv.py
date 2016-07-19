@@ -49,7 +49,9 @@ rownew = list(rows)
 
 print (rownew)
 
-with open('scrapeddataimg.csv', 'w') as f:
+newfile = input("Enter a filename for the hastag counts:") + ".csv"
+
+with open(newfile, 'w') as f:
 	writer = csv.writer(f)
 	for row in rownew:
 
