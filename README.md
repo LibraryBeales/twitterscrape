@@ -8,8 +8,8 @@ This project uses saved html documents instead of live twitter pages because res
 
 Coming improvements include:
 
-* Encoding in utf-8 in order to avoid charmap errors on encode and decode when using the OS default encoding
+* DONE Encoding in utf-8 in order to avoid charmap errors on encode and decode when using the OS default encoding
 * VBA script to interpret and display html in Excel or Calc
-* Option to adjust time stamp to one other than location of twitter search
+* DONE Option to adjust time stamp to one other than location of twitter search
 * Selenium browser used to search twitter and save html files, so this does not have to be done manually outside of the command line
 * Tutorials - For instructions on how to use these scripts, visit "Under Construction"
