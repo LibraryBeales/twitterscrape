@@ -28,7 +28,7 @@ def timestamp_to_str(timestamp):
 #soup = BeautifulSoup(data, "html.parser")
 
 names = soup('strong', {'class': 'fullname js-action-profile-name show-popup-with-id'})
-usernames = [name.contents for name in names]
+usernames = [name.contents[0] for name in names]
 
 handles = soup('span', {'class': 'username js-action-profile-name'})
 userhandles = [handle.contents[1].contents[0] for handle in handles]  
