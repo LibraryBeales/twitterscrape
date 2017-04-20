@@ -5,7 +5,7 @@ hashtagcounts.py will create a list of all hashtags used in the search results w
 twitterscrapetocsv.py creates a csv containing Username, Handle, Permalink, Time Stamp, Message Text, Images used in tweet (if any), Favorites, and ReTweets for each tweet in the search results.
 There are options for adjusting the timestamp and all encoding forced to utf-8 so OS and document encoding conflicts are minimized.
 
-This project uses saved html documents instead of live twitter pages because researchers will be referencing saved html pages as they frequently require a static version to include/reference in their publications. 
+This project uses saved html documents instead of live twitter pages, as researchers will be referencing saved html pages.  Documentation for research frequently requires a static version to include/reference in  publications. 
 
 Coming improvements include:
 

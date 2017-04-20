@@ -6,11 +6,15 @@ import re
 from time import time
 from datetime import datetime
 
+print ('*'*30)
+
 url = input("Enter the name of the file to be scraped:")
 with open(url, encoding="utf-8") as infile:
 	soup = BeautifulSoup(infile, "html.parser")
 
-tzvar = int(input("Enter the number of hours you'd like to add to the timestamp:"))
+print ('*'*30)
+
+tzvar = int(input("\n\nTimestamps in Twitter are determined by the user's location.\n\nIf you are searching for tweets connected to an event in a specific location, you can edit the timestamp here in order to match tweet times to the local time of an event. Use a negative number, with a - symbol, when subtracting hours.\n\nEnter the number of hours you'd like to add to or subtract from the timestamp:"))
 tzvarsecs = (tzvar*3600)
 #print (tzvarsecs)
 
@@ -62,12 +66,12 @@ rows = zip(usernames,athandles,fullurls,originaltimes,finishedtimes,retweetcount
 rownew = list(rows)
 
 #print (rownew)
-
-newfile = input("Enter a filename for the table:") + ".csv"
+print ('*'*30)
+newfile = input("\n\nEnter a filename for the csv file.\n\nPlease do not include the file extension, it will be appended automatically.\n\nAdditionally, this script will automatically overwrite any files that\ncurrently exist in the working directory, so please be careful when selecting filenames.\n\nEnter filename:") + ".csv"
 
 with open(newfile, 'w', encoding='utf-8') as f:
 	writer = csv.writer(f, delimiter=",")
-	writer.writerow(['Usernames', 'Handles', 'Urls', 'Timestamp', 'Adjusted Times', 'Retweets', 'Favorites', 'Message', 'Image Link'])
+	writer.writerow(['Usernames', 'Handles', 'Urls', 'User Timestamp', 'Adjusted Event Timestamp', 'Retweets', 'Favorites', 'Message', 'Image Link'])
 	for row in rownew:
 		writer.writerow(row)
 
