@@ -67,7 +67,7 @@ rownew = list(rows)
 
 #print (rownew)
 print ('*'*30)
-newfile = input("\n\nEnter a filename for the csv file.\n\nPlease do not include the file extension, it will be appended automatically.\n\nAdditionally, this script will automatically overwrite any files that\ncurrently exist in the working directory, so please be careful when selecting filenames.\n\nEnter filename:") + ".csv"
+newfile = input("\n\nEnter a filename for the csv file.\n\nPlease do not include the file extension, it will be appended automatically.\n\nAdditionally, this script will automatically overwrite any files that currently exist in the working directory,\nso please be careful when selecting filenames.\n\nEnter filename:") + ".csv"
 
 with open(newfile, 'w', encoding='utf-8') as f:
 	writer = csv.writer(f, delimiter=",")
