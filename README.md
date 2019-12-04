@@ -12,5 +12,7 @@ Improvements could include:
 * VBA script to interpret and display html in Excel or Calc
 * Selenium browser used to search twitter and save html files, so this does not have to be done manually outside of the command line
 * Tutorials - For instructions on how to use these scripts, visit "Under Construction"
-DONE Encoding in utf-8 in order to avoid charmap errors on encode and decode when using the OS default encoding
-DONE Option to adjust time stamp to one other than location of twitter search
+
+* DONE Encoding in utf-8 in order to avoid charmap errors on encode and decode when using the OS default encoding
+
+* DONE Option to adjust time stamp to one other than location of twitter search
