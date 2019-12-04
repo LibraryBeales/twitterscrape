@@ -7,7 +7,7 @@ There are options for adjusting the timestamp and all encoding forced to utf-8 s
 
 This project uses saved html documents instead of live twitter pages, as researchers will be referencing saved html pages.  Documentation for research frequently requires a static version to include/reference in  publications. 
 
-Coming improvements include:
+Improvements could include:
 
 * VBA script to interpret and display html in Excel or Calc
 * Selenium browser used to search twitter and save html files, so this does not have to be done manually outside of the command line
